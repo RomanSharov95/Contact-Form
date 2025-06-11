@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма заявки</title>
+</head>
+<body style="font-family:Arial; padding:20px;">
+  <form action="https://formsubmit.co/roman.sharov@web.de" method="POST">
+    <label>Ваше имя / название компании*<br>
+      <input type="text" name="name" required style="width:100%; padding:8px;">
+    </label><br><br>
+
+    <label>Телефон*<br>
+      <input type="tel" name="phone" required style="width:100%; padding:8px;">
+    </label><br><br>
+
+    <label>Почта*<br>
+      <input type="email" name="email" required style="width:100%; padding:8px;">
+    </label><br><br>
+
+    <label>Вид услуги*<br>
+      <select name="service" required style="width:100%; padding:8px;">
+        <option disabled selected value="">Выберите услугу</option>
+        <option>Контейнерные перевозки</option>
+        <option>Перевозки негабаритного груза</option>
+        <option>Экспедирование</option>
+        <option>Перевозка опасного груза</option>
+        <option>Организация перевозки скоропортящегося груза</option>
+        <option>Организация перетарки груза</option>
+        <option>Хранение груза на СВХ</option>
+        <option>Другое...</option>
+      </select>
+    </label><br><br>
+
+    <label>Комментарий<br>
+      <textarea name="comment" rows="4" style="width:100%; padding:8px;" placeholder="Например: откуда/куда везем товар, какой груз и т.д."></textarea>
+    </label><br><br>
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" style="background:#0057B8; color:white; padding:10px 20px; border:none; font-size:16px;">Отправить</button>
+  </form>
+</body>
+</html>
