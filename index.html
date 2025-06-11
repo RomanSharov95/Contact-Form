@@ -3,23 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Форма заявки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F8F9FA;
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    form {
+      background: #F8F9FA;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      background-color: #0057B8;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00489a;
+    }
+  </style>
 </head>
-<body style="font-family:Arial; padding:20px;">
-  <form action="https://formsubmit.co/roman.sharov@web.de" method="POST">
-    <label>Ваше имя / название компании*<br>
-      <input type="text" name="name" required style="width:100%; padding:8px;">
-    </label><br><br>
+<body>
+  <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+    <h2>Отправить заявку</h2>
 
-    <label>Телефон*<br>
-      <input type="tel" name="phone" required style="width:100%; padding:8px;">
-    </label><br><br>
+    <label>Ваше имя / название компании*
+      <input type="text" name="name" required>
+    </label>
 
-    <label>Почта*<br>
-      <input type="email" name="email" required style="width:100%; padding:8px;">
-    </label><br><br>
+    <label>Телефон*
+      <input type="tel" name="phone" required>
+    </label>
 
-    <label>Вид услуги*<br>
-      <select name="service" required style="width:100%; padding:8px;">
+    <label>Почта*
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Вид услуги*
+      <select name="service" required>
         <option disabled selected value="">Выберите услугу</option>
         <option>Контейнерные перевозки</option>
         <option>Перевозки негабаритного груза</option>
@@ -30,15 +76,15 @@
         <option>Хранение груза на СВХ</option>
         <option>Другое...</option>
       </select>
-    </label><br><br>
+    </label>
 
-    <label>Комментарий<br>
-      <textarea name="comment" rows="4" style="width:100%; padding:8px;" placeholder="Например: откуда/куда везем товар, какой груз и т.д."></textarea>
-    </label><br><br>
+    <label>Комментарий
+      <textarea name="comment" rows="4" placeholder="Например: откуда/куда везем товар, какой груз и т.д."></textarea>
+    </label>
 
     <input type="hidden" name="_captcha" value="false">
 
-    <button type="submit" style="background:#0057B8; color:white; padding:10px 20px; border:none; font-size:16px;">Отправить</button>
+    <button type="submit">Отправить</button>
   </form>
 </body>
 </html>
